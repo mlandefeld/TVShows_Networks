@@ -1,0 +1,34 @@
+﻿@model IEnumerable<TVShowsNetworks.Models.TVnetwork>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>TV Networks</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Logo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Logo)" alt="" class="img-thumbnail" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        
+    </tr>
+}
+
+</table>
