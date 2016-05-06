@@ -31,20 +31,29 @@ textarea {
     width: 60%;
     margin-left: 100px;
 }
-.navbar-fixed-top.navbar-shrink {
+.navbar .navbar-default .navbar-fixed-top{
     padding: 10px 0;
     height: 60px;
+}
+.navbar-default{
+    border: none;
 }
 body {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
-    color: #2c3e50;
-    background-color: #ffffff;
+    background-color: #E5D9F2;
+    color: #F5E8FF;
+    background-image: url(http://www.edifixio.com/deep-blue-theme/images/123.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    
 }
 h2{
     margin-left: 100px;
+    color: #F5E8FF;
 }
 .navbar-brand{
     font-size: 38px;
+    color: #F5E8FF;
 }
