@@ -23,10 +23,18 @@ textarea {
     max-width: 280px;
 }
 /*My code*/
-.img-thumbnail{
+.img-thumbnail.small-thumbnail{
     width: 80px;
     height: 60px;
 }
+.img-thumbnail.large-thumbnail{
+    width: 350px;
+    height: 250PX;
+    border: none;
+    border-radius: 1px;
+    margin: 10px 10px 10px 10px;
+}
+
 .table{
     width: 60%;
     margin-left: 100px;
@@ -56,4 +64,7 @@ h2{
 .navbar-brand{
     font-size: 38px;
     color: #F5E8FF;
+}
+a{
+    color: #000000;
 }

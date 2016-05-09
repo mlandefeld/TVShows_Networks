@@ -199,6 +199,7 @@
       <DependentUpon>TVshowsNetworks.edmx</DependentUpon>
       <LastGenOutput>TVshowsNetworks.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\TVshowsNetworks.edmx.sql" />
     <Content Include="Models\TVshowsNetworks.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TVshowsNetworks.edmx</DependentUpon>

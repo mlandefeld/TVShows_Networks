@@ -19,7 +19,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">TVbase</a>
+                <div class="navbar-brand">
+                    @Html.ActionLink("TVbase", "Index", "Home")
+                </div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,11 +30,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll active">
-                        <a href="#portfolio">Shows</a>
+                    <li class="page-scroll">
+                        @Html.ActionLink("Shows", "Index", "TVshows")
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Networks</a>
+                        @Html.ActionLink("Networks", "Index", "TVnetworks")
                     </li>
                 </ul>
             </div>
