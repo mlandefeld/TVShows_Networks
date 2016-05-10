@@ -15,9 +15,17 @@ namespace TVShowsNetworks.Controllers
         private TVShowsNetworksEntities db = new TVShowsNetworksEntities();
 
         // GET: TVnetworks
-        public ActionResult Index()
+        public ActionResult Index(string search)/*need to fix this*/
         {
-            return View(db.TVnetworks.ToList());
+            if(search != null)
+            {
+                return View(db.TVnetworks.Where(x => x.Name.StartsWith(search)).ToList());
+            }
+            else
+            {
+                return View(db.TVnetworks.ToList());
+            }
+            
         }
 
         // GET: TVnetworks/Details/5

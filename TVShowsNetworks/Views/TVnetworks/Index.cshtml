@@ -6,29 +6,39 @@
 
 <h2>TV Networks</h2>
 
+<p>
+    @using (Html.BeginForm("Index", "TVnetwork", FormMethod.Get))
+    {
+        <b>Search by Network</b>
+        <br />
+        @Html.TextBox("Search")<input type="submit" value="Search" />
+    }
+</p>
 
-<table class="table">
-    <tr>
-        <th>
+<p>
+    @Html.ActionLink("Reset", "Index", "TVnetworks")
+</p>
+
+<div class="table">
+    <div>
+        <div>
             @Html.DisplayNameFor(model => model.Logo)
-        </th>
-        <th>
+        </div>
+        <div>
             @Html.DisplayNameFor(model => model.Name)
-        </th>
-
-        <th></th>
-    </tr>
+        </div>
+    </div>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
+    <div>
+        <div>
             <img src="@Html.DisplayFor(modelItem => item.Logo)" alt="" class="img-thumbnail small-thumbnail" />
-        </td>
-        <td>
+        </div>
+        <div>
             @Html.DisplayFor(modelItem => item.Name)
-        </td>
+        </div>
         
-    </tr>
+    </div>
 }
 
-</table>
+</div>

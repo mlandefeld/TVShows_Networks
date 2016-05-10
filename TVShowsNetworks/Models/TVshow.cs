@@ -11,12 +11,14 @@ namespace TVShowsNetworks.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
     public partial class TVshow
     {
         public int ShowID { get; set; }
+        [Display(Name = "Network")]
         public int NetworkID { get; set; }
         public string Title { get; set; }
+        [Display(Name = "Length (minutes)")]
         public Nullable<int> Length { get; set; }
         public string Genre { get; set; }
     

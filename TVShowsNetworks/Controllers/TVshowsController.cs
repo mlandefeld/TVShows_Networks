@@ -120,6 +120,14 @@ namespace TVShowsNetworks.Controllers
             return RedirectToAction("Index");
         }
 
+        /*method for LINQ search*/
+        /*
+        public ActionResult ShowsTitle()
+        {
+            var linq = db.TVshows.Where(Title); 
+            return View(linq.ToList()); 
+        }
+        */
         protected override void Dispose(bool disposing)
         {
             if (disposing)

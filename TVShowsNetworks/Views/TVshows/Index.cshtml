@@ -5,6 +5,21 @@
 }
 
 <h2>TV Shows</h2>
+<!--
+<p>
+    @using (Html.BeginForm("Index", "TVnetworks", FormMethod.Get))
+    {
+        <b>Search by:</b>
+        @Html.RadioButton("searchBy", "Title", true) <text>Title</text>
+        @Html.RadioButton("searchBy", "TVnetwork.Name", true) <text>Network</text>
+        <br />
+        @Html.TextBox("Search")<input type="submit" value="Search" />
+    }
+</p>
+<p>
+    @Html.ActionLink("Reset", "Index", "TVnetworks")
+</p>
+-->
 
 <table class="table">
     <tr>
