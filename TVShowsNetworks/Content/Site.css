@@ -76,7 +76,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #2e9c22;
+    color: #808080;
     text-decoration: none;
 }
 #myCarousel{
@@ -101,7 +101,7 @@ a:hover{
     background-image: none;
 }
 .right.carousel-control{
-    margin-right: -50px;
+    margin-right: -55px;
     background-image: none;
 }
 .col-xs-3{

@@ -19,7 +19,17 @@
     @Html.ActionLink("Reset", "Index", "TVnetworks")
 </p>
 
-<div class="table">
+<div class="row">
+    <div class="col-xs-6 col-md-3">
+        <div class="img-thumbnail"></div>
+            <img src="@Html.DisplayNameFor(model => model.Logo)" alt="...">
+        <div>
+            @Html.DisplayNameFor(model => model.Name)
+        </div>
+    </div>
+
+<!--
+<div class="item">
     <div>
         <div>
             @Html.DisplayNameFor(model => model.Logo)
@@ -28,7 +38,7 @@
             @Html.DisplayNameFor(model => model.Name)
         </div>
     </div>
-
+    -->
 @foreach (var item in Model) {
     <div>
         <div>
