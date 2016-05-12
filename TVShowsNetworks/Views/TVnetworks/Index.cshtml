@@ -19,15 +19,27 @@
     @Html.ActionLink("Reset", "Index", "TVnetworks")
 </p>
 
-<div class="row">
-    <div class="col-xs-6 col-md-3">
+@foreach (var item in Model)
+{
+    using (Html.BeginForm("Index", "Shows", FormMethod.Get))
+    {
+        <div>
+            <div class="col-sm-6 col-md-4">
+                    <input type="hidden" name="network" value=@item.NetworkID>
+                    <input type="image" src="@Html.DisplayFor(modelItem => item.Logo)" alt="Logo Photo" class="img-thumbnail network" />
+            </div>
+        </div>
+    }
+}
+
+
+<!--
+<ul class="item">
+    <li class="col-xs-6 col-md-3">
         <div class="img-thumbnail"></div>
             <img src="@Html.DisplayNameFor(model => model.Logo)" alt="...">
-        <div>
-            @Html.DisplayNameFor(model => model.Name)
-        </div>
-    </div>
-
+    </li>
+-->
 <!--
 <div class="item">
     <div>
@@ -38,17 +50,15 @@
             @Html.DisplayNameFor(model => model.Name)
         </div>
     </div>
-    -->
+    
 @foreach (var item in Model) {
-    <div>
+    <li>
         <div>
             <img src="@Html.DisplayFor(modelItem => item.Logo)" alt="" class="img-thumbnail small-thumbnail" />
         </div>
-        <div>
-            @Html.DisplayFor(modelItem => item.Name)
-        </div>
         
-    </div>
+    </li>
 }
 
-</div>
+</ul>
+    -->
