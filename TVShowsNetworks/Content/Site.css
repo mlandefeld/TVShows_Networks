@@ -79,7 +79,6 @@ h2{
     margin-left: 100px;
     color: #F8F8F8;
     text-align: center; 
-    margin-left: -100px;
 }
 .navbar-brand{
     font-size: 38px;
@@ -98,6 +97,11 @@ a:hover{
 }
 #myCarousel{
     padding-top: 100px;
+    padding-left: -150px;
+    transition: 1s ease-in-out left;
+}
+.carousel-inner{
+    margin-left: -30px;
 }
 .thumbnail{
     width: 200px;
@@ -114,16 +118,19 @@ a:hover{
     margin-top: 180px;
 }
 .left.carousel-control{
-    margin-left: -110px;
+    margin-left: -130px;
     background-image: none;
 }
 .right.carousel-control{
-    margin-right: -55px;
+    margin-right: -75px;
     background-image: none;
 }
 .col-xs-3{
     width: 240px;
     height: 300px;
+}
+.col-lg-12{
+    margin-left: -30px;
 }
 a.thumbnail{
     width: 240px;
@@ -133,7 +140,9 @@ a.thumbnail{
     width: 240px;
     height: 300px;
 }
-
+.star-primary{
+    margin-left: 100px;
+}
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11{
     float: left;
     text-align: center;
