@@ -15,11 +15,13 @@ namespace TVShowsNetworks.Controllers
         private TVShowsNetworksEntities db = new TVShowsNetworksEntities();
 
         // GET: TVnetworks
-        public ActionResult Index(string search)/*need to fix this*/
+        public ActionResult Index(string searchString)/*implementing search bar*/
         {
-            if(search != null)
+            var students = from Name in db.TVnetworks select Name;
+
+            if(searchString != null)
             {
-                return View(db.TVnetworks.Where(x => x.Name.StartsWith(search)).ToList());
+                return View(db.TVnetworks.Where(x => x.Name.StartsWith(searchString)).ToList());
             }
             else
             {

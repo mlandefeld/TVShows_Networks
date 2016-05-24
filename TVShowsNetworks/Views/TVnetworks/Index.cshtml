@@ -6,14 +6,17 @@
 
 <h2>TV Networks</h2>
 
-<p>
-    @using (Html.BeginForm("Index", "TVnetwork", FormMethod.Get))
-    {
+
+@using (Html.BeginForm("Index", "TVnetwork", FormMethod.Get))
+{
+    <p>
         <b>Search by Network</b>
         <br />
-        @Html.TextBox("Search")<input type="submit" value="Search" />
-    }
-</p>
+        @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
 
 <p>
     @Html.ActionLink("Reset", "Index", "TVnetworks")
